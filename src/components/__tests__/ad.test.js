@@ -8,7 +8,6 @@ import Ad from "../Layout/Ad";
 describe("Ad component test", () => {
   it("it should render the Ad component ", () => {
     render(<Ad />);
-    screen.debug();
     expect(
       screen.getByText("Get UP TO 40% OFF on your 1st order More details")
     ).toBeInTheDocument();
@@ -21,5 +20,9 @@ describe("Ad component test", () => {
       "Get UP TO 40% OFF on your 1st order More details"
     );
     expect(comp).not.toBeInTheDocument();
+  });
+
+  it("should break", () => {
+    expect(true).toBe(false);
   });
 });
