@@ -1,5 +1,26 @@
+import * as React from "react";
+import Layout from "./components/Layout/Index";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import "./index.css";
+import "@fontsource/montserrat/700.css";
+
 function App() {
-  return <div>Hello World</div>;
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: "#1E1E1E",
+      },
+      secondary: {
+        main: "#00659D",
+      },
+    },
+  });
+
+  return (
+    <ThemeProvider theme={theme}>
+      <Layout>Hello World</Layout>
+    </ThemeProvider>
+  );
 }
 
 export default App;
