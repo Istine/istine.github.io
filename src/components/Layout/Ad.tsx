@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Box } from "@mui/material";
 
-const Ad: React.FC<{}> = () => {
+const Ad: React.FC<{}> = (): JSX.Element => {
   const [isAdOpen, setAdOpenState] = React.useState<boolean>(true);
 
   const closeAd = (e: React.MouseEvent<HTMLImageElement>) => {
@@ -36,12 +36,15 @@ const Ad: React.FC<{}> = () => {
       <img
         onClick={closeAd}
         className="xs-icon"
+        data-testid="close-icon"
         src="/assets/icons/cancel.png"
         alt="close icon"
         loading="lazy"
       />
     </Box>
-  ) : null;
+  ) : (
+    <></>
+  );
 };
 
 export default Ad;

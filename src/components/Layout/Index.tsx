@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import Ad from "../Ad";
+import Ad from "./Ad";
 
 const Layout: React.FC<{ children: any }> = ({ children }) => {
   return (
