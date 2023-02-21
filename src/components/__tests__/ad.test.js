@@ -21,8 +21,4 @@ describe("Ad component test", () => {
     );
     expect(comp).not.toBeInTheDocument();
   });
-
-  it("should break", () => {
-    expect(true).toBe(false);
-  });
 });
