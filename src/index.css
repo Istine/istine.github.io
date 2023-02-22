@@ -13,6 +13,11 @@ body {
   height: 10px;
 }
 
+.md-icon {
+  width: 18px;
+  height: 18px;
+}
+
 .md-logo {
   width: 120px;
   height: 70px;
@@ -20,4 +25,17 @@ body {
 
 .row-right {
   justify-self: end;
+}
+
+.user-initials {
+  width: 23px;
+  height: 23px;
+  font-size: 12px;
+  padding: 0.5rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }

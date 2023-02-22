@@ -19,7 +19,9 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Layout>Hello World</Layout>
+      <Layout>
+        <></>
+      </Layout>
     </ThemeProvider>
   );
 }

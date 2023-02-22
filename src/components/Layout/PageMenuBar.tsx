@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import Search from "./Search";
+import PageMenuIconWrapper from "./PageMenuIconWrapper";
 
 const PageMenuBar: React.FC<{}> = () => {
   return (
@@ -10,10 +11,9 @@ const PageMenuBar: React.FC<{}> = () => {
         minHeight: "100px",
         display: "flex",
         flexDirection: "column",
-        py: 1,
       }}
     >
-      <Box display="flex" justifyContent="space-around">
+      <Box display="flex" justifyContent="space-around" alignItems="center">
         <img
           src="/assets/logos/gallery-bebe-logo.png"
           alt="gallery bebe logo"
@@ -21,7 +21,7 @@ const PageMenuBar: React.FC<{}> = () => {
           className="md-logo"
         />
         <Search />
-        <>Hello</>
+        <PageMenuIconWrapper />
       </Box>
     </Box>
   );
