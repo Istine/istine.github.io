@@ -95,7 +95,7 @@ const ProductCard: React.FC<ProductInput> = ({
         }}
         component="span"
       >
-        NGN{price}
+        NGN {price}
       </Box>
     </CssCard>
   );
