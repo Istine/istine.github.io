@@ -12,7 +12,7 @@ const Ad: React.FC<{}> = (): JSX.Element => {
     <Box
       sx={{
         backgroundColor: "secondary.main",
-        width: "98%",
+        width: "100%",
         py: 1,
         display: "flex",
         justifyContent: "end",

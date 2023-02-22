@@ -40,7 +40,7 @@ const UserMenuBarItem: React.FC<{ name: string; withChevron: boolean }> = ({
     >
       <Box
         component="span"
-        sx={{ fontFamily: "montserrat", fontSize: "12px", color: "white" }}
+        sx={{ fontFamily: "montserrat", fontSize: "13px", color: "white" }}
       >
         {name}
       </Box>

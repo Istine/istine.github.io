@@ -16,7 +16,7 @@ const UserMenuBar: React.FC<{}> = () => {
   return (
     <Box
       sx={{
-        width: "98%",
+        width: "100%",
         height: "44px",
         backgroundColor: "secondary.dark",
         px: 2,
