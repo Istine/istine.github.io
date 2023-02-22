@@ -1,6 +1,5 @@
 import * as React from "react";
-import styled from "@emotion/styled";
-import { Box } from "@mui/material";
+import { Box, styled } from "@mui/material";
 import { SLIDER_ASSETS } from "../../constants";
 import Counter from "./Counter";
 

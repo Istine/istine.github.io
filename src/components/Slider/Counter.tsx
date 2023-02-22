@@ -1,4 +1,4 @@
-import { styled } from "@mui/system";
+import { styled } from "@mui/material/styles";
 import { Box } from "@mui/material";
 import * as React from "react";
 import { SLIDER_ASSETS } from "../../constants";
