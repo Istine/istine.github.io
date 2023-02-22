@@ -7,8 +7,7 @@ import Counter from "./Counter";
 const CssBox = styled(Box)({
   "&": {
     width: "100%",
-    minHeight: "500px",
-    maxHeight: "500px",
+    height: "500px",
     position: "relative",
   },
 });
