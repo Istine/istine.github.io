@@ -9,3 +9,8 @@ export const LINKS = [
   { name: "parents room", link: "#" },
   { name: "blog", link: "#" },
 ];
+
+export const SLIDER_ASSETS = [
+  "child-holding-camera.png",
+  "woman-and-child.png",
+];

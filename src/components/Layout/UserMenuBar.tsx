@@ -9,7 +9,7 @@ const LIST_OF_ITEMS = {
 const LIST_OF_USER_ITEMS = {
   collectionPoints: "Collection Points",
   welcomeUser: "Welcome user",
-  myAccount: ["Logout", "Profile", "Checkout"],
+  myAccount: ["My Account", "Logout", "Profile", "Checkout"],
 };
 
 const UserMenuBar: React.FC<{}> = () => {
