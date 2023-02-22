@@ -12,6 +12,7 @@ function App() {
       },
       secondary: {
         main: "#00659D",
+        dark: "#333333",
       },
     },
   });
