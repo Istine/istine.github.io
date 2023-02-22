@@ -10,14 +10,21 @@ const Layout: React.FC<{ children: any }> = ({ children }) => {
         p: 0,
         overflow: "hidden",
         width: "100%",
-        maxWidth: "1300px",
-        margin: "0 auto",
       }}
     >
       <Ad />
       <UserMenuBar />
-      <PageMenuBar />
-      {children}
+      <Box
+        sx={{
+          overflow: "hidden",
+          width: "100%",
+          maxWidth: "1300px",
+          margin: "0 auto",
+        }}
+      >
+        <PageMenuBar />
+        {children}
+      </Box>
     </Box>
   );
 };
