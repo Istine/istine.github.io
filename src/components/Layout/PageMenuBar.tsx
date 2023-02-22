@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import Search from "./Search";
 import PageMenuIconWrapper from "./PageMenuIconWrapper";
+import LowerPageMenu from "./LowerPageMenu";
 
 const PageMenuBar: React.FC<{}> = () => {
   return (
@@ -23,6 +24,7 @@ const PageMenuBar: React.FC<{}> = () => {
         <Search />
         <PageMenuIconWrapper />
       </Box>
+      <LowerPageMenu />
     </Box>
   );
 };

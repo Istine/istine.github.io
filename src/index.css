@@ -21,6 +21,7 @@ body {
 .md-logo {
   width: 120px;
   height: 70px;
+  cursor: pointer;
 }
 
 .row-right {
@@ -29,6 +30,7 @@ body {
 
 .user-initials {
   width: 23px;
+  cursor: pointer;
   height: 23px;
   font-size: 12px;
   padding: 0.5rem;

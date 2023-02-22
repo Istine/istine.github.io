@@ -52,7 +52,7 @@ const PageMenuIcon: React.FC<{
   value?: number;
 }> = ({ Icon, value }) => {
   return (
-    <Box display="flex" alignItems="center" mx={1}>
+    <Box display="flex" alignItems="center" mx={1} sx={{ cursor: "pointer" }}>
       {Icon}
       {value && (
         <Box component="span" fontSize="14px" mx={0.5}>
