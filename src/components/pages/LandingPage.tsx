@@ -5,6 +5,7 @@ import Slider from "../Slider";
 import Cards from "../Cards";
 import Tabs from "../Tabs";
 import ProductCards from "../Cards/ProductCard";
+import Categories from "../Categories";
 
 const LandingPage: React.FC<{}> = () => {
   return (
@@ -14,6 +15,7 @@ const LandingPage: React.FC<{}> = () => {
       <Tabs>
         <ProductCards />
       </Tabs>
+      <Categories />
     </Layout>
   );
 };

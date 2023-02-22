@@ -45,3 +45,12 @@ export const PRODUCT_IMAGES = [
     rating: 4.9,
   },
 ];
+
+export const CATEGORIES = [
+  { url: "cat-1.png", color: "#E0B9BA" },
+  { url: "cat-2.png", color: "#A2C891" },
+  { url: "cat-3.png", color: "#F0C88B" },
+  { url: "cat-4.png", color: "#AEA4C1" },
+  { url: "cat-5.png", color: "#BAC7BA" },
+  { url: "cat-6.png", color: "#E0D597" },
+];
