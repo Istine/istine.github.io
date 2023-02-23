@@ -38,9 +38,9 @@ const Grid = styled(Box)({
     gridRowEnd: 2,
     display: "flex",
     justifyContent: "space-between",
-    padding: ".5rem",
+    padding: ".7rem .5rem",
     "& img": {
-      width: "55%",
+      width: "50%",
       height: "100%",
     },
   },
@@ -54,9 +54,9 @@ const Grid = styled(Box)({
     gridRowEnd: 2,
     display: "flex",
     alignItems: "center",
-    padding: ".5rem",
+    padding: ".7rem .5rem",
     "& img": {
-      width: "55%",
+      width: "50%",
       height: "100%",
     },
   },
@@ -113,15 +113,33 @@ const Blog: React.FC<{}> = () => {
         <div className="post2">
           <img src="/assets/pictures/baby.png" alt="baby" loading="lazy" />
           <Box
-            component="h3"
-            sx={{
-              fontFamily: "montserrat",
-              fontSize: "9px",
-              color: "white",
-              textTransform: "capitalize",
-            }}
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            width="100%"
+            px={0.5}
           >
-            work at the speed
+            <Box
+              component="h3"
+              sx={{
+                fontFamily: "montserrat",
+                fontSize: "9px",
+                color: "white",
+                textTransform: "capitalize",
+              }}
+            >
+              work at the speed
+            </Box>
+            <Box
+              component="p"
+              margin={0}
+              fontFamily="montserrat"
+              fontSize={8}
+              color="white"
+            >
+              The gradual accumulation information about atomic and small-scale
+              behaviour
+            </Box>
           </Box>
         </div>
         <div className="post3">
@@ -161,4 +179,4 @@ const Blog: React.FC<{}> = () => {
   );
 };
 
-export default Blog;
+export default React.memo(Blog);

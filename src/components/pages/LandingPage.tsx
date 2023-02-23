@@ -7,18 +7,22 @@ import Tabs from "../Tabs";
 import ProductCards from "../Cards/ProductCard";
 import Categories from "../Categories";
 import Blog from "../Blog";
+import Footer from "../Footer";
 
 const LandingPage: React.FC<{}> = () => {
   return (
-    <Layout>
-      <Slider />
-      <Cards />
-      <Tabs>
-        <ProductCards />
-      </Tabs>
-      <Categories />
-      <Blog />
-    </Layout>
+    <>
+      <Layout>
+        <Slider />
+        <Cards />
+        <Tabs>
+          <ProductCards />
+        </Tabs>
+        <Categories />
+        <Blog />
+      </Layout>
+      <Footer />
+    </>
   );
 };
 
