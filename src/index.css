@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.xs-icon {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+}
+
+.md-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.md-logo {
+  width: 120px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.row-right {
+  justify-self: end;
+}
+
+.user-initials {
+  width: 23px;
+  cursor: pointer;
+  height: 23px;
+  font-size: 12px;
+  padding: 0.5rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.slider-asset {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.slider-asset.fade-in {
+  opacity: 1;
+}
+
+.footer-input {
+  width: 300px;
+  height: auto;
+  display: flex;
+}
+
+.footer-input input[type="text"] {
+  width: 100%;
+  height: 32px;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 0 1rem;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.footer-input input[type="text"]::placeholder {
+  font-family: "Montserrat";
+  font-size: 12px;
+}
+
+.footer-input button {
+  box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  border: none;
+  font-size: 8px;
+  cursor: pointer;
+  background-color: #00659d;
+  color: #e6e6e6;
+  font-family: "Montserrat";
+  padding: 0.5rem;
+}
+
+.socials {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  margin: 0.1rem 0.2rem;
+}
+.socials:nth-child(1) {
+  margin-left: 0;
+}
+
+.footer-logo {
+  width: 100px;
+  cursor: pointer;
+  height: 50px;
+}
+
+.payment-partners {
+  width: 20px;
+  height: 15px;
+  margin: 0 0.3rem;
+  cursor: pointer;
+}
