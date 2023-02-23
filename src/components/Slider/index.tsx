@@ -17,7 +17,7 @@ const Slider: React.FC<{}> = () => {
     <img
       key={idx}
       src={`/assets/pictures/${img}`}
-      alt="woman and child"
+      alt={count === 0 ? "child holding camera" : "woman and child"}
       className={idx === count ? "slider-asset fade-in" : "slider-asset "}
     />
   ));
@@ -34,7 +34,7 @@ const Slider: React.FC<{}> = () => {
   }, [count]);
 
   return (
-    <CssBox>
+    <CssBox data-testid="slider-test">
       <Counter count={count} />
       {Images[count]}
     </CssBox>
