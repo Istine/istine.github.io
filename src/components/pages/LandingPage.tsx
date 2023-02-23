@@ -6,6 +6,7 @@ import Cards from "../Cards";
 import Tabs from "../Tabs";
 import ProductCards from "../Cards/ProductCard";
 import Categories from "../Categories";
+import Blog from "../Blog";
 
 const LandingPage: React.FC<{}> = () => {
   return (
@@ -16,6 +17,7 @@ const LandingPage: React.FC<{}> = () => {
         <ProductCards />
       </Tabs>
       <Categories />
+      <Blog />
     </Layout>
   );
 };
