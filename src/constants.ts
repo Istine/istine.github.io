@@ -96,3 +96,14 @@ export const FOOTER_LINKS = [
     ],
   },
 ];
+
+export const PARTNERS = [
+  "one.png",
+  "two.png",
+  "three.png",
+  "four.png",
+  "five.png",
+  "six.png",
+  "seven.png",
+  "eight.png",
+];

@@ -8,6 +8,7 @@ import ProductCards from "../Cards/ProductCard";
 import Categories from "../Categories";
 import Blog from "../Blog";
 import Footer from "../Footer";
+import Partners from "../Partners";
 
 const LandingPage: React.FC<{}> = () => {
   return (
@@ -20,6 +21,7 @@ const LandingPage: React.FC<{}> = () => {
         </Tabs>
         <Categories />
         <Blog />
+        <Partners />
       </Layout>
       <Footer />
     </>
