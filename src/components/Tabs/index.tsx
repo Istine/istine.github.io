@@ -17,6 +17,23 @@ const CssTabs = styled(MuiTabs)({
   },
 });
 
+const TabWithBadge = styled(Box)({
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  position: "relative",
+  "& .badge": {
+    position: "absolute",
+    textTransform: "capitalize",
+    fontFamily: "montserrat",
+    fontSize: "8px",
+    fontWeight: 600,
+    backgroundColor: "red",
+    color: "white",
+    padding: "0.2rem 0.5rem",
+  },
+});
+
 const Tabs: React.FC<{ children: any }> = ({ children }) => {
   const [value, setValue] = React.useState(0);
 
@@ -28,7 +45,12 @@ const Tabs: React.FC<{ children: any }> = ({ children }) => {
       <CssTabs value={value} onChange={handleChange} centered>
         <Tab label="top sales" />
         <Tab label="trending" />
-        <Tab label="winter sales" />
+        <>
+          <TabWithBadge>
+            <div className="badge">new</div>
+            <Tab label="new arrival" />
+          </TabWithBadge>
+        </>
       </CssTabs>
       {children}
     </Box>
