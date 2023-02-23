@@ -46,9 +46,9 @@ const UserMenuBarItem: React.FC<{ name: string; withChevron: boolean }> = ({
       </Box>
       {withChevron ? (
         open ? (
-          <ExpandLessIcon sx={ICON_STYLE} />
+          <ExpandLessIcon data-testid="open" sx={ICON_STYLE} />
         ) : (
-          <ExpandMoreIcon sx={ICON_STYLE} />
+          <ExpandMoreIcon data-testid="closed" sx={ICON_STYLE} />
         )
       ) : null}
     </Box>
