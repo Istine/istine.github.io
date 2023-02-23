@@ -76,14 +76,15 @@ function generateNodesByListType(item: any, idx: number, heading: string) {
         const location = isSocialIcons ? `/assets/icons` : `/assets/logos`;
         const SubList = (
           <Box
+            key={idx}
             display="flex"
             alignItems="center"
             mb={isSocialIcons ? 2 : 0}
             mt={!isSocialIcons ? 2 : 0}
           >
-            {item.map((node, idx) => (
+            {item.map((node, key) => (
               <img
-                key={idx}
+                key={key}
                 className={isSocialIcons ? "socials" : "payment-partners"}
                 src={location + "/" + node}
                 alt={isSocialIcons ? "social icon" : "payment icon"}
@@ -96,6 +97,7 @@ function generateNodesByListType(item: any, idx: number, heading: string) {
       } else if (Object.keys(item).includes("url")) {
         return (
           <img
+            key={idx}
             className="footer-logo"
             src={`/assets/logos/${item.url}`}
             alt="gallery bebe logo"
@@ -129,9 +131,15 @@ const List: React.FC<{ list: { items: Array<any>; heading: string } }> = ({
 };
 
 const Footer: React.FC<{}> = () => {
+  const [value, setValue] = React.useState("");
+
   const ListItems = FOOTER_LINKS.map((list, idx) => {
     return <List key={idx} list={list} />;
   });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setValue(e.target.value);
+  };
   return (
     <>
       <CssFooter component="footer">
@@ -146,7 +154,13 @@ const Footer: React.FC<{}> = () => {
             </Box>
           </Box>
           <div className="footer-input">
-            <input type="text" placeholder="Your Email" />
+            <input
+              type="text"
+              placeholder="Your Email"
+              value={value}
+              onChange={handleChange}
+              data-testid="input-test"
+            />
             <button>Subscribe</button>
           </div>
         </Box>
