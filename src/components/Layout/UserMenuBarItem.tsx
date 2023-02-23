@@ -55,4 +55,4 @@ const UserMenuBarItem: React.FC<{ name: string; withChevron: boolean }> = ({
   );
 };
 
-export default UserMenuBarItem;
+export default React.memo(UserMenuBarItem);

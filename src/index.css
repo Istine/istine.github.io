@@ -88,3 +88,26 @@ body {
   font-family: "Montserrat";
   padding: 0.5rem;
 }
+
+.socials {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  margin: 0.1rem 0.2rem;
+}
+.socials:nth-child(1) {
+  margin-left: 0;
+}
+
+.footer-logo {
+  width: 100px;
+  cursor: pointer;
+  height: 50px;
+}
+
+.payment-partners {
+  width: 20px;
+  height: 15px;
+  margin: 0 0.3rem;
+  cursor: pointer;
+}
